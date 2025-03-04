@@ -59,3 +59,29 @@ Uses hysteresis to prevent rapid relay switching.
 🚀 Conclusion
 This project automates water tank monitoring using ESP32, ultrasonic sensors, and OLED graphics to provide a clear and visual representation of water levels while efficiently controlling the pump. The use of ESP-NOW makes it a fast and WiFi-independent solution.
 
+ESP32 TIP:
+Feature	Wemos D1 R32	ESP32 Dev Module
+Ultrasonic Sensor (TRIG & ECHO Pins)	TRIG = 18, ECHO = 19	✅ Use the same pins OR choose other GPIOs
+OLED Display (I2C: SDA & SCL)	SDA = 21, SCL = 22	✅ Same for ESP32 Dev
+Relay Module (Pump Control)	GPIO 5	✅ Same for ESP32 Dev
+🔹 Safe GPIO Pins on ESP32 Dev Board
+If needed, you can use these alternative GPIOs for your ESP32 Dev Board:
+
+Component	Recommended GPIO (ESP32 Dev Kit)
+Ultrasonic Sensor TRIG	GPIO 18 or GPIO 23
+Ultrasonic Sensor ECHO	GPIO 19 or GPIO 22
+I2C OLED SDA	GPIO 21 (Default)
+I2C OLED SCL	GPIO 22 (Default)
+Relay Module	GPIO 5 or GPIO 27
+🚀 Steps to Switch to ESP32 Dev Board
+1️⃣ Connect your ESP32 Dev Module using the same wiring as Wemos D1 R32.
+2️⃣ If needed, update the pin numbers in your code:
+
+Change TRIG, ECHO, and RELAY_PIN if using different GPIOs.
+3️⃣ Compile & Upload the Code (No other changes needed!).
+4️⃣ Test the System (Monitor Serial & OLED Display).
+🎯 Conclusion
+Yes, you can replace Wemos D1 R32 with ESP32 Dev Board!
+Just make sure to double-check the GPIO assignments and adjust if necessary.
+
+🚀 Let me know if you need help with specific ESP32 Dev board models! 🔧😃
