@@ -60,7 +60,7 @@ Uses hysteresis to prevent rapid relay switching.
 This project automates water tank monitoring using ESP32, ultrasonic sensors, and OLED graphics to provide a clear and visual representation of water levels while efficiently controlling the pump. The use of ESP-NOW makes it a fast and WiFi-independent solution.
 
 ESP32 TIP:
-Feature	Wemos D1 R32	ESP32 Dev Module
+Feature	Wemos D1 R32	ESP32 Dev Module 
 Ultrasonic Sensor (TRIG & ECHO Pins)	TRIG = 18, ECHO = 19	✅ Use the same pins OR choose other GPIOs
 OLED Display (I2C: SDA & SCL)	SDA = 21, SCL = 22	✅ Same for ESP32 Dev
 Relay Module (Pump Control)	GPIO 5	✅ Same for ESP32 Dev
@@ -68,8 +68,8 @@ Relay Module (Pump Control)	GPIO 5	✅ Same for ESP32 Dev
 If needed, you can use these alternative GPIOs for your ESP32 Dev Board:
 
 Component	Recommended GPIO (ESP32 Dev Kit)
-Ultrasonic Sensor TRIG	GPIO 18 or GPIO 23
-Ultrasonic Sensor ECHO	GPIO 19 or GPIO 22
+Ultrasonic Sensor TRIG	GPIO 16
+Ultrasonic Sensor ECHO	GPIO 17
 I2C OLED SDA	GPIO 21 (Default)
 I2C OLED SCL	GPIO 22 (Default)
 Relay Module	GPIO 5 or GPIO 27
